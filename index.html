@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>毛潆萱 · 海外产品经理/产品运营作品集</title>
+    <title>毛潆萱 · 海外产品运营/产品经理</title>
     <style>
-        /* ========== 全局样式 ========== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             background: #f5f7fb;
@@ -19,17 +13,14 @@
             line-height: 1.5;
             padding: 40px 20px;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             background: white;
             border-radius: 28px;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
             padding: 48px 40px;
         }
-
-        /* ========== 标题和文字 ========== */
         h1 {
             font-size: 2.2rem;
             font-weight: 700;
@@ -40,7 +31,6 @@
             margin-bottom: 8px;
             letter-spacing: -0.3px;
         }
-
         .subhead {
             font-size: 1.05rem;
             color: #4a6a85;
@@ -49,7 +39,6 @@
             margin: 16px 0 24px 0;
             font-weight: 450;
         }
-
         h2 {
             font-size: 1.6rem;
             font-weight: 600;
@@ -58,19 +47,14 @@
             border-bottom: 3px solid #e6edf4;
             color: #1a2a3a;
         }
-
-        h2:first-of-type {
-            margin-top: 0;
-        }
-
+        h2:first-of-type { margin-top: 0; }
         h3 {
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 10px;
             color: #1a2a3a;
         }
-
-        /* ========== 数据卡片（核心亮点） ========== */
+        /* 数据看板 */
         .stats {
             display: flex;
             flex-wrap: wrap;
@@ -82,50 +66,40 @@
             justify-content: space-between;
             border: 1px solid #eef2f8;
         }
-
-        .stat-item {
-            text-align: center;
-            flex: 1;
-        }
-
+        .stat-item { text-align: center; flex: 1; }
         .stat-number {
             font-size: 2rem;
             font-weight: 800;
             color: #2c6e9e;
             line-height: 1.2;
         }
-
         .stat-label {
             font-size: 0.8rem;
             color: #5a6e7c;
             letter-spacing: 0.3px;
         }
-
-        /* ========== 作品集卡片网格 ========== */
+        /* 网格卡片 */
         .grid {
             display: flex;
             flex-wrap: wrap;
             gap: 24px;
             margin: 24px 0 16px;
         }
-
         .card {
             flex: 1;
             min-width: 280px;
             background: #ffffff;
             border-radius: 20px;
             padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
             border: 1px solid #eef2f8;
             transition: all 0.25s ease;
         }
-
         .card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1);
             border-color: #cfdfed;
         }
-
         .card img {
             width: 100%;
             border-radius: 14px;
@@ -133,7 +107,6 @@
             border: 1px solid #eef2f8;
             background: #fefefe;
         }
-
         .badge {
             display: inline-block;
             background: #eef2fa;
@@ -145,8 +118,6 @@
             margin-bottom: 12px;
             letter-spacing: 0.3px;
         }
-
-        /* ========== 联系方式 ========== */
         .contact {
             background: #f8fafd;
             border-radius: 20px;
@@ -155,19 +126,13 @@
             text-align: center;
             border: 1px solid #eef2f8;
         }
-
         .contact a {
             color: #2c6e9e;
             text-decoration: none;
             font-weight: 500;
             border-bottom: 1px solid #cbdde9;
         }
-
-        .contact a:hover {
-            color: #1e577a;
-            border-bottom-color: #1e577a;
-        }
-
+        .contact a:hover { color: #1e577a; border-bottom-color: #1e577a; }
         footer {
             text-align: center;
             font-size: 0.75rem;
@@ -176,69 +141,112 @@
             padding-top: 32px;
             margin-top: 16px;
         }
-
-        /* ========== 响应式 ========== */
         @media (max-width: 700px) {
-            .container {
-                padding: 28px 20px;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            .stats {
-                flex-direction: column;
-                gap: 16px;
-                text-align: center;
-            }
+            .container { padding: 28px 20px; }
+            h1 { font-size: 1.8rem; }
+            .stats { flex-direction: column; gap: 16px; text-align: center; }
         }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <!-- 头部自我介绍 -->
+    <!-- 头部自我介绍（突出本地化 & 闭环） -->
     <h1>👋 毛潆萱 Yolanda</h1>
-    <div class="subhead">海外产品经理 · 产品运营 | 0→1 软硬件落地 | 数据驱动决策</div>
+    <div class="subhead">海外产品运营 · 产品经理 | 本地化洞察 · 全链路闭环</div>
 
-    <p>主导 <strong>B端智能零售终端从0到1定义与落地</strong>，负责 C端智能厨电海外运营与迭代优化。通过竞品调研、用户洞察、数据监控驱动产品决策，具备全生命周期管理与跨部门协同经验。</p>
+    <p>
+        主导<strong>B端智能零售终端从0到1定义</strong>，负责<strong>C端智能厨电海外本地化</strong>。
+        擅长通过<strong>实地调研、竞品分析、用户旅程</strong>捕捉本地化机会，并依托<strong>需求管理、数据监控、问题闭环</strong>推动产品持续迭代。
+    </p>
 
     <!-- 核心数据看板 -->
     <div class="stats">
         <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">P0需求采纳率</div></div>
         <div class="stat-item"><div class="stat-number">90%</div><div class="stat-label">优化需求采纳率</div></div>
-        <div class="stat-item"><div class="stat-number">↓2%</div><div class="stat-label">硬件成本降低</div></div>
+        <div class="stat-item"><div class="stat-number">↓2%</div><div class="stat-label">硬件成本优化</div></div>
         <div class="stat-item"><div class="stat-number">15+</div><div class="stat-label">竞品深度调研</div></div>
     </div>
 
-    <!-- ========== 作品集展示 ========== -->
+    <!-- ==================== 作品集 ==================== -->
+
     <h2>📁 项目作品集</h2>
 
-    <!-- 第一行 -->
+    <!-- 模块一：本地化与市场洞察 -->
+    <h3 style="margin-top: 20px; color: #2c6e9e;">🌍 本地化洞察 · 从市场到产品</h3>
     <div class="grid">
-        <div class="card"><div class="badge">用户洞察</div><h3>🗺️ 用户体验地图</h3><img src="images/user-journey-map.png" alt="用户体验地图"><p>梳理海外用户完整使用路径，识别5个核心痛点，驱动20+项优化。</p></div>
-        <div class="card"><div class="badge">竞品分析</div><h3>📊 竞品功能对比表</h3><img src="images/competitor-function-comparison.png" alt="竞品功能对比表"><p>6个海外竞品深度调研，输出26条功能对比，支撑产品定位。</p></div>
-        <div class="card"><div class="badge">市场洞察</div><h3>🇺🇸 美国渠道走访</h3><img src="images/us-channel-visit-report.png" alt="美国渠道走访报告"><p>实地走访，定位5个核心竞品及渠道入驻策略，赋能销售与GTM。</p></div>
+        <div class="card">
+            <div class="badge">实地调研</div>
+            <h3>🇺🇸 美国渠道走访</h3>
+            <img src="images/美国线下渠道走访调研报告.png" alt="美国渠道走访报告">
+            <p>实地走访高端、大众、电商三大渠道，输出渠道分层、产品形态空白、AI智能趋势等核心结论，制定分阶段进入策略。</p>
+        </div>
+        <div class="card">
+            <div class="badge">竞品分析</div>
+            <h3>📊 竞品功能对比</h3>
+            <img src="images/competitor-function-comparison.png" alt="竞品功能对比">
+            <p>覆盖5大竞品，从核心智能、硬件、生态、安全等维度对比，明确自身差异化优势（视觉识别、AI学习、健康测算等）。</p>
+        </div>
+        <div class="card">
+            <div class="badge">本地化食材</div>
+            <h3>🍣 美日食材供应链调研</h3>
+            <img src="images/us-channel-visit-report.png" alt="食材调研（示意）">
+            <p>深入调研美国Panda Express及日本经典菜系，输出15+道本地化菜品清单及食材供应链建议，赋能食谱开发。</p>
+        </div>
     </div>
 
-    <!-- 第二行 -->
+    <!-- 模块二：产品规划与设计 -->
+    <h3 style="margin-top: 40px; color: #2c6e9e;">📝 产品规划 · 从需求到设计</h3>
     <div class="grid">
-        <div class="card"><div class="badge">产品规划</div><h3>📱 APP竞品调研</h3><img src="images/app-competitor-research-report.png.png" alt="APP竞品调研"><p>海外独立APP竞品调研，输出功能清单，P0级需求全部采纳。</p></div>
-        <div class="card"><div class="badge">需求管理</div><h3>📝 APP功能需求清单</h3><img src="images/app-feature-requirements-list.png" alt="功能需求清单"><p>P0级需求全部被采纳，推进上线与迭代。</p></div>
-        <div class="card"><div class="badge">用户运营</div><h3>🔄 用户生命周期表</h3><img src="images/app-user-lifecycle-table.png" alt="用户生命周期表"><p>分层用户运营，识别高价值用户行为。</p></div>
+        <div class="card">
+            <div class="badge">用户研究</div>
+            <h3>🗺️ 用户体验地图</h3>
+            <img src="images/user-journey-map.png" alt="用户体验地图">
+            <p>完整绘制Pre-purchase到Retention全旅程，识别5大核心痛点，输出20+项优化机会，推动产品体验升级。</p>
+        </div>
+        <div class="card">
+            <div class="badge">竞品分析</div>
+            <h3>📱 APP竞品调研</h3>
+            <img src="images/app-competitor-research-report.png" alt="APP竞品调研">
+            <p>分析6款海外APP功能、注册方式、用户评价，提炼可参考功能清单，为海外独立APP规划提供输入。</p>
+        </div>
+        <div class="card">
+            <div class="badge">产品设计</div>
+            <h3>🎨 引导页与绑定页设计</h3>
+            <img src="images/引导页面设计建议.png" alt="引导页设计">
+            <p>设计欢迎页、引导页、设备绑定前介绍页，以场景化叙述降低用户教育成本，提升绑定转化率。</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <div class="badge">任务体系</div>
+            <h3>🏆 新手任务体系</h3>
+            <img src="images/任务体系.png" alt="任务体系">
+            <p>设计13项新手任务，涵盖激活、烹饪、探索、互动，配合进度条与里程碑奖励，驱动用户首次及二次烹饪。</p>
+        </div>
+        <div class="card">
+            <div class="badge">需求管理</div>
+            <h3>📋 研发需求排期表</h3>
+            <img src="images/需求管理表.png" alt="需求管理表">
+            <p>月度输出8+项产品需求，明确模块、来源、期望时间，协同研发评估排期，推动核心功能落地。</p>
+        </div>
     </div>
 
-    <!-- 第三行 -->
+    <!-- 模块三：数据驱动与问题闭环 -->
+    <h3 style="margin-top: 40px; color: #2c6e9e;">📈 数据运营 · 监控与闭环</h3>
     <div class="grid">
-        <div class="card"><div class="badge">产品设计</div><h3>🎨 引导页页面设计</h3><img src="images/app-page-design-prd.png" alt="页面设计PRD"><p>引导页、绑定页、产品介绍页PRD与设计协作。</p></div>
-        <div class="card"><div class="badge">内容策略</div><h3>🍳 菜谱页面结构建议</h3><img src="images/app-recipe-page-structure-recommendations.png" alt="菜谱页面调研"><img src="images/app-recipe-page.png" alt="菜谱页面设计" style="margin-top: 0;"><p>行业数据+竞品思路+用户反馈，输出信息架构建议。</p></div>
-        <div class="card"><div class="badge">数据决策</div><h3>📊 数据总览看板</h3><img src="images/ops-dashboard-overview.png" alt="数据总览看板"><p>从0搭建Dashboard，建立核心指标监控体系。</p></div>
-    </div>
-
-    <!-- 第四行 -->
-    <div class="grid">
-        <div class="card"><div class="badge">问题闭环</div><h3>🐞 专项问题登记表</h3><img src="images/issue-tracking-log.png" alt="专项问题登记表"><p>归纳问题标签，协调研发排查，建立标准化FAQ与闭环机制。</p></div>
-        <div class="card"><div class="badge">流程搭建</div><h3>📈 美国仓发货流程</h3><img src="images/us-warehouse-sop-flow.png" alt="美国仓SOP"><p>从0搭建美国仓询价、发货、库存管理、对账闭环。</p></div>
-        <div class="card"><div class="badge">需求跟进</div><h3>📋 研发需求排期</h3><img src="images/dev-requirements-tracking.png" alt="需求排期表"><p>每月提出8个需求，与研发对齐排期，推动核心功能落地。</p></div>
+        <div class="card">
+            <div class="badge">数据看板</div>
+            <h3>📊 周度运营数据追踪</h3>
+            <img src="images/周烹饪数据追踪.png" alt="周烹饪数据">
+            <p>搭建周度DAU、烹饪完成率、智能菜谱使用率等核心指标看板，监控趋势并识别异常波动，驱动运营决策。</p>
+        </div>
+        <div class="card">
+            <div class="badge">问题闭环</div>
+            <h3>🐞 专项问题排查</h3>
+            <img src="images/专项问题排查.png" alt="专项问题排查">
+            <p>建立问题标签体系，针对“过干过熟”“烹饪终止”等专项问题，联动研发排查根因，形成闭环解决机制。</p>
+        </div>
     </div>
 
     <!-- 联系方式 -->
@@ -250,7 +258,7 @@
     </div>
 
     <footer>
-        © 2025 毛潆萱 Yolanda · 海外产品经理/产品运营 · 基于用户洞察与数据驱动的产品实践
+        © 2025 毛潆萱 Yolanda · 海外产品运营/产品经理 · 本地化洞察 · 全链路闭环
     </footer>
 </div>
 </body>
